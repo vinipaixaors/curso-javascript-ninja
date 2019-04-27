@@ -81,8 +81,10 @@ function novaInstrucao( val1, val2, val3 ) {
         return val1 + val2;
     } else if (val1 !== undefined && val2 === undefined && val3 === undefined) {
         return val1;
-    } else {
+    } else if (val1 !== undefined && val2 !== undefined && val3 !== undefined) {
         return (val1 + val2) / val3;
+    } else {
+        return null;
     }
 }
 
